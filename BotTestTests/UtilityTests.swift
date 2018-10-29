@@ -33,6 +33,14 @@ class UtilityTests: XCTestCase {
         let result = utility.reverseString(tempString)
         XCTAssertTrue(result == expectation)
     }
+    
+    func testLastString() {
+        let tempString = "string"
+        let expectation = "g"
+        let result = utility.lastCharacterOfString(tempString)
+        XCTAssert(result != nil)
+        XCTAssertTrue(String(result!) == expectation)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

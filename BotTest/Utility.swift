@@ -12,4 +12,8 @@ class Utility {
     func reverseString(_ string: String) -> String {
         return String(string.reversed())
     }
+    
+    func lastCharacterOfString(_ string: String) -> Character? {
+        return string.last
+    }
 }
