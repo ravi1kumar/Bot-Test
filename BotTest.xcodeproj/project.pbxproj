@@ -14,6 +14,8 @@
 		AF9FE4772186D1E100E7C2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9FE4752186D1E100E7C2F9 /* LaunchScreen.storyboard */; };
 		AF9FE4822186D1E100E7C2F9 /* BotTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE4812186D1E100E7C2F9 /* BotTestTests.swift */; };
 		AF9FE48D2186D1E200E7C2F9 /* BotTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE48C2186D1E200E7C2F9 /* BotTestUITests.swift */; };
+		AF9FE49B2186D2E900E7C2F9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE49A2186D2E900E7C2F9 /* Utility.swift */; };
+		AF9FE49D2186D52C00E7C2F9 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE49C2186D52C00E7C2F9 /* UtilityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		AF9FE4882186D1E100E7C2F9 /* BotTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9FE48C2186D1E200E7C2F9 /* BotTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTestUITests.swift; sourceTree = "<group>"; };
 		AF9FE48E2186D1E200E7C2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9FE49A2186D2E900E7C2F9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		AF9FE49C2186D52C00E7C2F9 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				AF9FE4732186D1E100E7C2F9 /* Assets.xcassets */,
 				AF9FE4752186D1E100E7C2F9 /* LaunchScreen.storyboard */,
 				AF9FE4782186D1E100E7C2F9 /* Info.plist */,
+				AF9FE49A2186D2E900E7C2F9 /* Utility.swift */,
 			);
 			path = BotTest;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9FE4812186D1E100E7C2F9 /* BotTestTests.swift */,
+				AF9FE49C2186D52C00E7C2F9 /* UtilityTests.swift */,
 				AF9FE4832186D1E100E7C2F9 /* Info.plist */,
 			);
 			path = BotTestTests;
@@ -258,6 +264,7 @@
 			files = (
 				AF9FE46F2186D1DF00E7C2F9 /* ViewController.swift in Sources */,
 				AF9FE46D2186D1DF00E7C2F9 /* AppDelegate.swift in Sources */,
+				AF9FE49B2186D2E900E7C2F9 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9FE49D2186D52C00E7C2F9 /* UtilityTests.swift in Sources */,
 				AF9FE4822186D1E100E7C2F9 /* BotTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96269D32P2;
 				INFOPLIST_FILE = BotTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.wynk.BotTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.BotTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96269D32P2;
 				INFOPLIST_FILE = BotTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.wynk.BotTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.BotTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

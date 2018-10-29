@@ -1,5 +1,5 @@
 //
-//  BotTestTests.swift
+//  UtilityTests.swift
 //  BotTestTests
 //
 //  Created by B0208144 on 29/10/18.
@@ -7,9 +7,12 @@
 //
 
 import XCTest
+
 @testable import BotTest
 
-class BotTestTests: XCTestCase {
+class UtilityTests: XCTestCase {
+    
+    let utility = Utility()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,6 +27,12 @@ class BotTestTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testReverseString() {
+        let tempString = "string"
+        let expectation = "gnirts"
+        let result = utility.reverseString(tempString)
+        XCTAssertTrue(result == expectation)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
