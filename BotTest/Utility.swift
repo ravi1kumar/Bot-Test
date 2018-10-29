@@ -14,6 +14,7 @@ class Utility {
     }
     
     func lastCharacterOfString(_ string: String) -> Character? {
+        // Add dummy coomment
         return string.first
     }
 }
