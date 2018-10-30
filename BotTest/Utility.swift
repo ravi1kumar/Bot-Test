@@ -14,10 +14,10 @@ class Utility {
     }
     
     func lastCharacterOfString(_ string: String) -> Character? {
-        return string.last
+        return string.first
     }
     
     func toggleBool(_ bool: Bool) -> Bool {
-        return bool
+        return !bool
     }
 }
