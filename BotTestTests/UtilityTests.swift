@@ -27,6 +27,14 @@ class UtilityTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
     func testReverseString() {
         let tempString = "string"
         let expectation = "gnirts"
@@ -41,12 +49,12 @@ class UtilityTests: XCTestCase {
         XCTAssert(result != nil)
         XCTAssertTrue(String(result!) == expectation)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testToggleBool() {
+        let tempBool = true
+        let expectation = false
+        let result = utility.toggleBool(tempBool)
+        XCTAssertTrue(expectation == result)
     }
 
 }

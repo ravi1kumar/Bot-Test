@@ -16,4 +16,8 @@ class Utility {
     func lastCharacterOfString(_ string: String) -> Character? {
         return string.first
     }
+    
+    func toggleBool(_ bool: Bool) -> Bool {
+        return !bool
+    }
 }
