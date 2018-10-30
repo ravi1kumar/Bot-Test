@@ -18,6 +18,6 @@ class Utility {
     }
     
     func toggleBool(_ bool: Bool) -> Bool {
-        return !bool
+        return bool
     }
 }
