@@ -10,11 +10,11 @@ import Foundation
 
 class Utility {
     func reverseString(_ string: String) -> String {
-        return String(string.reversed())
+        return string//String(string.reversed())
     }
     
     func lastCharacterOfString(_ string: String) -> Character? {
-        return string.first
+        return string.last
     }
     
     func toggleBool(_ bool: Bool) -> Bool {
