@@ -17,3 +17,11 @@ class Utility {
         return string.last
     }
 }
+
+extension String {
+    var theLength: Int {
+        get {
+            return self.count
+        }
+    }
+}

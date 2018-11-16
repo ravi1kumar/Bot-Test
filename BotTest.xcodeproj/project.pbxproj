@@ -16,6 +16,7 @@
 		AF9FE48D2186D1E200E7C2F9 /* BotTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE48C2186D1E200E7C2F9 /* BotTestUITests.swift */; };
 		AF9FE49B2186D2E900E7C2F9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE49A2186D2E900E7C2F9 /* Utility.swift */; };
 		AF9FE49D2186D52C00E7C2F9 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE49C2186D52C00E7C2F9 /* UtilityTests.swift */; };
+		B38F72DC219EAB5C00C06FD8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FE49A2186D2E900E7C2F9 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +275,7 @@
 			files = (
 				AF9FE49D2186D52C00E7C2F9 /* UtilityTests.swift in Sources */,
 				AF9FE4822186D1E100E7C2F9 /* BotTestTests.swift in Sources */,
+				B38F72DC219EAB5C00C06FD8 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

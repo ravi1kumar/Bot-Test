@@ -27,6 +27,20 @@ class UtilityTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testStringLength1() {
+        let testString1 = "abcd123"
+        let expectation1 = 7
+        let result = testString1.theLength
+        XCTAssertEqual(expectation1, result, "balle balle1")
+    }
+    
+    func testStringLength2() {
+        let testString2 = "abcd123"
+        let expectation2 = 8
+        let result = testString2.theLength
+        XCTAssertEqual(expectation2, result, "balle balle2")
+    }
+    
     func testReverseString() {
         let tempString = "string"
         let expectation = "gnirts"
