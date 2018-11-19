@@ -56,5 +56,53 @@ class UtilityTests: XCTestCase {
         let result = utility.toggleBool(tempBool)
         XCTAssertTrue(expectation == result)
     }
-
+    
+    func testValidPassword() {
+        //_#@%\\*\\-
+        let tempPassword = "Abcdefg1_"
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssert(result)
+    }
+    
+    func testValidPasswordWithAllAllowedCharcterSet() {
+        //_#@%\\*\\-
+        let tempPassword = "Abcdefg1_#@%*-"
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssert(result)
+    }
+    
+    func testInvalidPasswordWithoutNumber() {
+        let tempPassword = "Abcdefgh"
+        let expectation = false
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssertTrue(result == expectation)
+    }
+    
+    func testInvalidPasswordWithoutCalitalAlphbet() {
+        let tempPassword = "abcdefg1"
+        let expectation = false
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssertTrue(result == expectation)
+    }
+    
+    func testInvalidPasswordWithoutSmallAlphbet() {
+        let tempPassword = "ABCDERGH1"
+        let expectation = false
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssertTrue(result == expectation)
+    }
+    
+    func testInvalidPasswordWithLessCharcterThanLimit() {
+        let tempPassword = "Abc1"
+        let expectation = false
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssertTrue(result == expectation)
+    }
+ 
+    func testInvalidPasswordWithNotAllowedCharcter() {
+        let tempPassword = "Aajkdfhjfh1$"
+        let expectation = false
+        let result = Utility.validatePassword(tempPassword)
+        XCTAssertTrue(result == expectation)
+    }
 }

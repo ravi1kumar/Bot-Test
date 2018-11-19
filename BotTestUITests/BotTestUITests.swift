@@ -29,6 +29,19 @@ class BotTestUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let userNameTextField = app.textFields["User Name"]
+        userNameTextField.tap()
+        userNameTextField.typeText("a")
+        
+        let passwordTextField = app.secureTextFields["Password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("1Abcdefg")
+        
+        app.buttons["Login"].tap()
+        
+        let navigationBar = app.navigationBars["Logged In Screen"]
+        XCTAssertTrue(navigationBar.exists)
     }
-
 }
