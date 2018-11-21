@@ -453,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.artandtech.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pocDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = pocAdhoc;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.artandtech.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pocDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = pocAdhoc;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
